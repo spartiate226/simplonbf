@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class projets extends Model
 {
-    //
+    protected $guarded=[];
 }
