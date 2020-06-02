@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('accueil');
 });
+
+//apprenant
+Route::get('apprnants/{statut}','apprenantControlleur@index');
+Route::get('new-apprnant','apprenantControlleur@create');
+Route::post('new-apprnant','apprenantControlleur@store');
+//publication
+Route::get('publication/{pup}','');
+Route::get('publication/{pup}/{id}','');
+Route::get('publication','');
+Route::post('publication','');
+//projet
+Route::get('projet/{id_apprenant}','');
+//recherche
+Route::post('search/{type}','');

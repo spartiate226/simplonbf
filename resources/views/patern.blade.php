@@ -155,7 +155,7 @@
 
             <!-- Search -->
             <section id="search" class="alt">
-                <form method="post" action="#">
+                <form method="post" @yield('search-action')>
                     <input type="text" name="query" id="query" placeholder="Search" />
                 </form>
             </section>
@@ -166,14 +166,14 @@
                     <h2>Menu</h2>
                 </header>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="generic.html">Articles</a></li>
-                    <li><a href="elements.html">Evenements</a></li>
+                    <li><a href="{{url('/')}}">Accueil</a></li>
+                    <li><a href="{{url('publications/actualites')}}">actualite</a></li>
+                    <li><a href="{{url('publications/evenements')}}">Evenements</a></li>
                     <li>
                         <span class="opener">Simploniens</span>
                         <ul>
-                            <li><a href="#">Apprenants</a></li>
-                            <li><a href="#">Alumnis</a></li>
+                            <li><a href="{{url('apprenants/0')}}">Apprenants</a></li>
+                            <li><a href="{{url('apprenants/1')}}">Alumnis</a></li>
                             <!--<li><a href="#">Tempus Magna</a></li>
                             <li><a href="#">Feugiat Veroeros</a></li>-->
                         </ul>
