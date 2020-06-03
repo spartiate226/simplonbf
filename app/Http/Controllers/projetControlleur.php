@@ -10,7 +10,7 @@ class projetControlleur extends Controller
 
     }
 
-    function store(){
+    function store(Request $request){
 
     }
 
