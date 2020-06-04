@@ -15,6 +15,13 @@ class CreateApprenantsTable extends Migration
     {
         Schema::create('apprenants', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nom');
+            $table->string('prenom');
+            $table->string('photo');
+            $table->string('contact');
+            $table->string('statu');
+            $table->string('projet_realiser');
+            $table->string('entreprise_actuelle');
             $table->timestamps();
         });
     }

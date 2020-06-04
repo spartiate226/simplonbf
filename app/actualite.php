@@ -10,7 +10,12 @@ class actualite extends Model
     protected $guarded=[];
 
     function scopeStore(Request $request){
-        $actu=$this->create($request->all());
+        $actu=self::create([
+            "titre"=>$request->titre,
+            "contenu"=>$request->contenu,
+            "image"=>$request->image->store(),
+            "type"=>$request->type,
+        ]);
         return $actu;
     }
     function scopels($type){

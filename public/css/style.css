@@ -1,3 +1,34 @@
 .logo{
     height: 40px;
 }
+.image img{
+    height: 100%;
+    width: 100%;
+}
+.single-img{
+    height: 400px;
+}
+.para-actualite{
+    word-wrap: break-word;
+}
+.artl{
+    box-shadow: 1px 2px 5px 1px gray;
+}
+
+.icon::before,.toggle::before,a:hover,.opener:hover{
+    color: #9B0002!important;
+}
+.major h2{
+    border-bottom-color: #9B0002!important;
+}
+
+.btn-simplon{
+    color: white!important;
+    background-color: #9B0002!important;
+}
+.ap-form{
+    box-shadow: 1px 2px 5px 1px gray;
+    padding: 1%;
+    background-color: white;
+    margin-top: 2%;
+}

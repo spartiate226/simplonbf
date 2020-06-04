@@ -15,11 +15,11 @@
         </div>
         <span class=" image object">
 										<div class="slider">
-											<img src="images/pic10.jpg" alt="" />
-										    <img src="images/pic10.jpg" alt="" />
-										    <img src="images/pic10.jpg" alt="" />
+											<img class="" src="{{asset('images/1.jpg')}}" alt="" />
+										    <img class="" src="{{asset('images/2.jpg')}}" alt="" />
+										    <img class="" src="{{asset('images/3.jpg')}}" alt="" />
 										</div>
-									</span>
+        </span>
     </section>
 
     <!-- Section -->
@@ -31,29 +31,29 @@
             <article>
                 <span class="icon fa-gem"></span>
                 <div class="content">
-                    <h3>Portitor ullamcorper</h3>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <h3>Objets connectés </h3>
+                    <p> Developpement</p>
                 </div>
             </article>
             <article>
                 <span class="icon solid fa-paper-plane"></span>
                 <div class="content">
-                    <h3>Sapien veroeros</h3>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <h3>Consultant DevOps</h3>
+                    <p>Gestion de projet</p>
                 </div>
             </article>
             <article>
                 <span class="icon solid fa-rocket"></span>
                 <div class="content">
-                    <h3>Quam lorem ipsum</h3>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <h3>Développeur web et web mobile </h3>
+                    <p>Développement</p>
                 </div>
             </article>
             <article>
                 <span class="icon solid fa-signal"></span>
                 <div class="content">
-                    <h3>Sed magna finibus</h3>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <h3>Technicien supérieur systèmes et réseaux</h3>
+                    <p>Reseaux</p>
                 </div>
             </article>
         </div>
@@ -64,20 +64,19 @@
         <header class="major">
             <h2>Actualites</h2>
         </header>
-        <div class="posts">
+        <div class=" row m-4">
             @foreach ($liste as $actualite)
-            <article>
-            <a href="#" class="image"><img src="{{$actualite->image}}" alt="" /></a>
+            <article class="col-md-3 p-2 artl ">
+            <a href="#" class="image w-100"><img src="{{asset('storage/'.$actualite->image)}}" alt="{{$actualite->image}}" ></a>
             <h3>{{$actualite->titre}}</h3>
-                <p>{{$actualite->contenu}}</p>
                 <ul class="actions">
-                <li><a href="{{url('publication/'.$actualite->id)}}" class="button">Detail</a></li>
+                <li><a href="{{url('publications/'.$actualite->id)}}" class="button">Detail</a></li>
                 </ul>
             </article>
             @endforeach
         </div>
         <div>
-           {{ $actualite->links()}}
+           {{ $liste->links()}}
         </div>
     </section>
 @endsection
