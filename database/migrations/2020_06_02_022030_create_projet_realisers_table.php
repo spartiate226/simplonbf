@@ -15,6 +15,8 @@ class CreateProjetRealisersTable extends Migration
     {
         Schema::create('projet_realisers', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('id_apprenant');
+            $table->integer('id_projet');
             $table->timestamps();
         });
     }

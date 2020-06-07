@@ -331,7 +331,6 @@ class ComposerStaticInit755266ddbb7fa999327ece5aaa95abfc
         'App\\Http\\Controllers\\evenementControlleur' => __DIR__ . '/../..' . '/app/Http/Controllers/evenementControlleur.php',
         'App\\Http\\Controllers\\projetControlleur' => __DIR__ . '/../..' . '/app/Http/Controllers/projetControlleur.php',
         'App\\Http\\Controllers\\projet_realiserControlleur' => __DIR__ . '/../..' . '/app/Http/Controllers/projet_realiserControlleur.php',
-        'App\\Http\\Controllers\\publicationController' => __DIR__ . '/../..' . '/app/Http/Controllers/publicationController.php',
         'App\\Http\\Controllers\\searchController' => __DIR__ . '/../..' . '/app/Http/Controllers/searchController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -3638,6 +3637,7 @@ class ComposerStaticInit755266ddbb7fa999327ece5aaa95abfc
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'apprenantSeeder' => __DIR__ . '/../..' . '/database/seeds/apprenantSeeder.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
@@ -3706,6 +3706,8 @@ class ComposerStaticInit755266ddbb7fa999327ece5aaa95abfc
         'phpDocumentor\\Reflection\\Types\\String_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/String_.php',
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+        'projetSeeder' => __DIR__ . '/../..' . '/database/seeds/projetSeeder.php',
+        'publicationSeeder' => __DIR__ . '/../..' . '/database/seeds/publicationSeeder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -17,11 +17,10 @@ class CreateApprenantsTable extends Migration
             $table->increments('id');
             $table->string('nom');
             $table->string('prenom');
-            $table->string('photo');
+            $table->string('photo')->nullable();
             $table->string('contact');
             $table->string('statu');
-            $table->string('projet_realiser');
-            $table->string('entreprise_actuelle');
+            $table->string('entreprise_actuelle')->nullable();
             $table->timestamps();
         });
     }

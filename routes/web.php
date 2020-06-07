@@ -11,20 +11,21 @@
 |
 */
 
-Route::get('/','evenementControlleur@index');
+
 
 //apprenant
-Route::get('apprnants/{statut}','apprenantControlleur@index');
-Route::get('new-apprnant','apprenantControlleur@create');
-Route::post('new-apprnant','apprenantControlleur@store');
+Route::get('apprenants/{statut}','apprenantControlleur@index');
+Route::get('new-apprenant','apprenantControlleur@create');
+Route::post('new-apprenant','apprenantControlleur@store');
 //publication
 Route::get('publication','evenementControlleur@create');
 Route::post('publication','evenementControlleur@store');
 
-Route::get('publication/{pub?}','evenementControlleur@index');
-Route::get('publications/{id}','evenementControlleur@show');
+Route::get('/','evenementControlleur@index');
+Route::get('publications/{pub?}','evenementControlleur@index');
+Route::get('publication/{id}','evenementControlleur@show');
 
 //projet
-Route::get('projet/{id_apprenant}','projetController@index');
+Route::get('projets/{id_apprenant}','projetControlleur@index');
 //recherche
-Route::post('search/{type}','searchController@index');
+Route::post('search','searchController@index');

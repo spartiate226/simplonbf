@@ -7,13 +7,13 @@ use App\evenement;
 class evenementControlleur extends Controller
 {
     function index($pub='actualites'){
-        if($type="actualites"){
-            $actualite=evenement::where('type','=','actualite')->paginate(10);
+        if($pub=="actualites"){
+            $actualite=evenement::where('type','=','actualite')->paginate(5);
             return view('accueil',['liste'=>$actualite]);
         }
-        if($type="evenements"){
-            $evenement=evenement::where('type','=','evenements')->paginate(10);
-            return view('accueil',['liste'=>$evenement]);
+        if($pub=="evenements"){
+            $evenement=evenement::where('type','=','evenement')->paginate(5);
+            return view('evenements',['liste'=>$evenement]);
         }
     }
 

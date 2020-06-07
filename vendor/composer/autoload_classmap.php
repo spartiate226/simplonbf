@@ -18,7 +18,6 @@ return array(
     'App\\Http\\Controllers\\evenementControlleur' => $baseDir . '/app/Http/Controllers/evenementControlleur.php',
     'App\\Http\\Controllers\\projetControlleur' => $baseDir . '/app/Http/Controllers/projetControlleur.php',
     'App\\Http\\Controllers\\projet_realiserControlleur' => $baseDir . '/app/Http/Controllers/projet_realiserControlleur.php',
-    'App\\Http\\Controllers\\publicationController' => $baseDir . '/app/Http/Controllers/publicationController.php',
     'App\\Http\\Controllers\\searchController' => $baseDir . '/app/Http/Controllers/searchController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
@@ -3325,6 +3324,7 @@ return array(
     'Whoops\\Util\\SystemFacade' => $vendorDir . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
     'Whoops\\Util\\TemplateHelper' => $vendorDir . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
     'XdgBaseDir\\Xdg' => $vendorDir . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+    'apprenantSeeder' => $baseDir . '/database/seeds/apprenantSeeder.php',
     'phpDocumentor\\Reflection\\DocBlock' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
     'phpDocumentor\\Reflection\\DocBlockFactory' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
     'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
@@ -3393,4 +3393,6 @@ return array(
     'phpDocumentor\\Reflection\\Types\\String_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/String_.php',
     'phpDocumentor\\Reflection\\Types\\This' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/This.php',
     'phpDocumentor\\Reflection\\Types\\Void_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+    'projetSeeder' => $baseDir . '/database/seeds/projetSeeder.php',
+    'publicationSeeder' => $baseDir . '/database/seeds/publicationSeeder.php',
 );

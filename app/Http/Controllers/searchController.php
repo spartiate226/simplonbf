@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class searchController extends Controller
 {
-    function index($type){
-
+    function index(Request $request){
+        return view('search');
     }
 }

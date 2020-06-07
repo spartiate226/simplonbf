@@ -32,3 +32,6 @@
     background-color: white;
     margin-top: 2%;
 }
+#query:focus{
+    border-color:#9B0002!important;
+}

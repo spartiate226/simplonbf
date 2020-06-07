@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Editorial by HTML5 UP</title>
+    <title>SIMPLON BURKINA</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="{{asset('css/app.css')}}" />
@@ -39,8 +39,9 @@
 
             <!-- Search -->
             <section id="search" class="alt">
-                <form method="post" @yield('search-action')>
-                    <input type="text" name="query" id="query" placeholder="Search" />
+                <form method="post" action="{{url('search')}}">
+                    @csrf
+                    <input type="text" name="query" id="query" placeholder="Search:publications,apprenants," />
                 </form>
             </section>
 
@@ -55,8 +56,8 @@
                     <li>
                         <span class="opener">Simploniens</span>
                         <ul>
-                            <li><a href="{{url('apprenants/0')}}">Apprenants</a></li>
-                            <li><a href="{{url('apprenants/1')}}">Alumnis</a></li>
+                            <li><a href="{{url('apprenants/apprenants')}}">Apprenants</a></li>
+                            <li><a href="{{url('apprenants/alumnis')}}">Alumnis</a></li>
                         </ul>
                 </ul>
             </nav>
