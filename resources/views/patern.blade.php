@@ -39,9 +39,9 @@
 
             <!-- Search -->
             <section id="search" class="alt">
-                <form method="post" action="{{url('search')}}">
+                <form method="post" action="@yield('search')">
                     @csrf
-                    <input type="text" name="query" id="query" placeholder="Search:publications,apprenants," />
+                    <input type="text" name="search" id="query" placeholder="Search:publications,apprenants," />
                 </form>
             </section>
 

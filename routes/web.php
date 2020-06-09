@@ -28,4 +28,4 @@ Route::get('publication/{id}','evenementControlleur@show');
 //projet
 Route::get('projets/{id_apprenant}','projetControlleur@index');
 //recherche
-Route::post('search','searchController@index');
+Route::post('search/{type}','searchController@index');

@@ -1,5 +1,7 @@
 @extends('patern')
-
+@section('search')
+    {{url('search/actualite')}}
+@endsection
 @section('contenue')
     <section id="banner" class="m-2">
         <div class="content ">

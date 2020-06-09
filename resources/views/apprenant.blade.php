@@ -1,11 +1,11 @@
 @extends('patern')
 
+@section('search')
+    {{url('search/apprenant')}}
+@endsection
 @section('contenue')
         <!-- Section -->
         <section>
-            {{--<header class="major">
-                <h2>Nos apprenants</h2>
-            </header>--}}
             <div class=" row m-4 justify-content-center">
                 @foreach ($liste as $element)
                     <article class="col-md-4  p-1 m-1 artl ">
